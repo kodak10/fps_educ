@@ -173,7 +173,7 @@ background: #fdfdfdab;
 
 /*********About*******/
 .about{
-    height: 100vh;
+    min-height:100vh;
     display: grid;
     place-items: center;
     width: 100%;
@@ -193,8 +193,9 @@ background: #fdfdfdab;
     height: 120px;
     display: grid;
     place-items: center;
-    box-shadow: 5px 0px 20px 0px;
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
     border-radius: 5px;
+    float: right;
 }
 .about .statistique:hover{
     transition: 0.3s ease-in-out;
@@ -217,6 +218,11 @@ background: #fdfdfdab;
 .about .about-text p{
     font-size: 18px;
     letter-spacing: 2px;
+    padding: 0;
+}
+.about .about-text p span{
+    font-weight: bolder;
+    font-size: 19px;
 }
 .about .trait{
     height: 100%;
@@ -227,19 +233,48 @@ background: #fdfdfdab;
 
 /**********Ours services********/
 .ours_services{
-    height: 100vh;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
-.ours_services .overlay {
-   
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #008CBA;
-    overflow: hidden;
-    width: 100%;
-    height:0;
-    transition: .5s ease;
-  }
+.ours_services .box{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.ours_services .active{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+
+.ours_services  .box:hover{
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
+}
+
+
+
+.ours_services .icon-box{margin-top: 10px;}
+.ours_services .icon-box i{
+    font-size: 30px;
+    color: #0e1532;
+}
+.ours_services .text-box{
+    margin: 30px auto;
+}
+.ours_services .text-box span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0e1532;
+}
 
 
 /***********responsive*******/
@@ -285,6 +320,11 @@ background: #fdfdfdab;
     .about .statistique{margin: 30px auto;width: 65%;}
     .about-text{margin: 0 !important;}
     .about-img img{height: 100%;}
+
+    .about .statistique{
+       
+        float: none;
+    }
 }
 
 /*Tablette*/
