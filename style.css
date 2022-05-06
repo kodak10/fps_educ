@@ -171,6 +171,7 @@ background: #fdfdfdab;
     font-weight:bolder;
 }
 
+/*********About*******/
 .about{
     height: 100vh;
     display: grid;
@@ -179,6 +180,7 @@ background: #fdfdfdab;
 
     
 }
+
 .about-img img{
    height: 55vh;
    margin-top: 65px;
@@ -187,7 +189,7 @@ background: #fdfdfdab;
     display: grid;
     place-items: center;
     margin:10px;
-    width: 90%;
+    width: 80%;
     height: 120px;
     display: grid;
     place-items: center;
@@ -214,6 +216,7 @@ background: #fdfdfdab;
 }
 .about .about-text p{
     font-size: 18px;
+    letter-spacing: 2px;
 }
 .about .trait{
     height: 100%;
@@ -279,8 +282,9 @@ background: #fdfdfdab;
     .about-detail{
         flex-direction: column-reverse;
     }
-    .about .statistique{margin: 30px auto;}
+    .about .statistique{margin: 30px auto;width: 65%;}
     .about-text{margin: 0 !important;}
+    .about-img img{height: 100%;}
 }
 
 /*Tablette*/
@@ -300,6 +304,8 @@ background: #fdfdfdab;
     .header-content h4{font-size: 12px;}
 
     .header-nav{margin: 0;}
+
+    .carousel .header-content h2{line-height: 1.9;}
 }
 
 @media (max-width:475px){
