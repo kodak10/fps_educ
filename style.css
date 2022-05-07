@@ -259,9 +259,11 @@ background: #fdfdfdab;
 .ours_services  .box:hover{
     box-shadow: 5px 0px 20px 0px #b9b9b9;
 }
-
-
-
+.ours_services .box:hover .icon-box i{
+    color: #dfcc03;
+    transition: 0.3s ease-in-out;
+    transform: rotate(50deg);
+}
 .ours_services .icon-box{margin-top: 10px;}
 .ours_services .icon-box i{
     font-size: 30px;
