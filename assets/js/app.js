@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
   
     $('.owl-carousel').owlCarousel({
@@ -6,7 +5,7 @@ $(document).ready(function () {
         margin:10,
         mouveDrag:false,
         autoplay:true,
-        nav:true,
+        nav:false,
         dots:false,
         autoplayTimeout:6500,
         autoplayHoverPause:true,
@@ -25,48 +24,46 @@ $(document).ready(function () {
       }
     });
   
-  });
-$(document).ready(function () {
- 
-    /*Testimonials 3columns*/
-    $("#testimonial-slider").owlCarousel({
-       items: 3,
-       autoplay: 2500,
-       autoplayHoverPause: true,
-       loop: true,
-       margin: 30,
-       dots: true,
-       nav: false,
-       responsive: {
-          0: {
-             items: 1,
-          },
-          600: {
-             items: 2,
-          },
-          320: {
-             items: 3,
-          },
-       }
-    });
- 
- 
- });
+});
 
- document.getElementById("navbar-toggler").active
+
+  
+$('.galerie').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+  
+
+
+
+ 
+
+
  window.onscroll = function () {
 
-if (document.documentElement.scrollTop > 0) {
+if (document.documentElement.scrollTop > 40) {
 /*au scrool*/
-document.getElementById("header").style.background = "#212529";
-document.getElementById("navbar-toggler").style.background = "#fff";
+document.getElementById("header").style.background = "#0e1532";
+document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
 document.getElementById("navbar").style.padding = "10px 0px";
 }
 else {
 /*sans scrool*/
 document.getElementById("header").style.background = "transparent";
-document.getElementById("navbar-toggler").style.background = "transparent";
-document.getElementById("navbar").style.padding = "20px 0px";
+document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
+document.getElementById("header").style.padding = "10px 0px";
 
 }
 

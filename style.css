@@ -22,7 +22,7 @@ header{
 }
 
 
-.navbar-brand{color: #fff !important;font-weight: 600;font-size: 28px;}
+.navbar-brand{color: #fff !important;font-weight: 700;font-size: 30px;padding: 5px;}
 
 .navbar-brand img{width: 80px;height: 60px;}
 
@@ -279,6 +279,39 @@ background: #fdfdfdab;
 }
 
 
+
+/******Galerie****/
+.section-galerie .galerie img{
+    width: 50%;
+    height: 50%;
+}
+/* .section-galerie .owl-dots{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+}
+.section-galerie .owl-dots .active{
+    background: #dfcc03;
+}
+.section-galerie .owl-dots button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    background: #0e1532;
+    margin: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
 /***********responsive*******/
 
 @media (max-width:991px) {
@@ -306,7 +339,7 @@ background: #fdfdfdab;
     /*************carousel**************/
     .carousel .header-content{padding:50px ;}
 
-    .carousel .header-content h1{line-height: 2;font-size: 42px;}
+    .carousel .header-content h2{font-size: 42px;}
 
     .carousel .header-content h4{color: #fff;font-weight: 300;font-size: 24px;}
 
@@ -347,7 +380,7 @@ background: #fdfdfdab;
 
     .header-nav{margin: 0;}
 
-    .carousel .header-content h2{line-height: 1.9;}
+    .carousel .header-content h2{line-height: 2;}
 }
 
 @media (max-width:475px){
@@ -362,7 +395,7 @@ background: #fdfdfdab;
     /*carousel*/
     .carousel .header-content{position: relative;padding:50px ;}
 
-    .carousel .header-content h1{font-size: 38px;line-height: 1.5;}
+    .carousel .header-content h2{font-size: 32px;line-height: 1.9;}
 
     .carousel .header-content .line{margin: 10px;}
 }
