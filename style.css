@@ -266,7 +266,7 @@ background: #fdfdfdab;
 }
 .ours_services .icon-box{margin-top: 10px;}
 .ours_services .icon-box i{
-    font-size: 30px;
+    font-size: 32px;
     color: #0e1532;
 }
 .ours_services .text-box{
@@ -285,15 +285,14 @@ background: #fdfdfdab;
     width: 50%;
     height: 50%;
 }
-/* .section-galerie .owl-dots{
+.section-galerie .owl-dots{
     display: flex;
     justify-content:center;
     align-items: center;
     margin: 20px;
 }
-.section-galerie .owl-dots .active{
-    background: #dfcc03;
-}
+.owl-dots .owl-dot.active span{background: #dfcc03 !important;}
+
 .section-galerie .owl-dots button{
     height: 20px;
     width: 20px;
@@ -301,16 +300,64 @@ background: #fdfdfdab;
     border: none;
     background: #0e1532;
     margin: 10px;
+}
+
+
+
+/*******Partenaire***/
+
+.partenaires .partenaire-box{
+    background: #f2f2f2;
+    margin: 20px auto;
+}
+/* .partenaires .partenaire-box:hover{
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
 } */
+.partenaire-box .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.partenaire-box .logo-partenaire img{
+    height: 90px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-partenaire span{font-weight: 600;}
 
 
-
-
-
-
-
-
-
+/*****Contact_us*****/
+.contact_us{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us .contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_us .icon{
+    height: 100px;
+    width: 100px;
+    background: #0e1532;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.contact_us .icon span i{
+    font-size: 20px;
+    color: #dfcc03;
+    
+}
+.contact_us .detail p{
+    font-size: 18px;
+    font-weight: 600;
+}
 
 /***********responsive*******/
 

@@ -32,6 +32,10 @@ $('.galerie').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:true,
+    autoplayTimeout:4000,
+    autoplayHoverPause:true,
+
     responsive:{
         0:{
             items:1
