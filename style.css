@@ -181,10 +181,6 @@ background: #fdfdfdab;
     
 }
 
-.about-img img{
-   height: 55vh;
-   margin-top: 65px;
-}
 .about .statistique{
     display: grid;
     place-items: center;
@@ -279,6 +275,56 @@ background: #fdfdfdab;
 }
 
 
+/******Facultes*******/
+.facultes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.facultes .faculte{
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: 20px auto;
+}
+.facultes .faculte:hover{
+    background-color: #dfcc03;
+    background-image: url("https://cabinet3c.net/2/wp-content/uploads/2019/12/campus_slider_object.png");
+    transition: 0.3s all ease-in-out;
+}
+
+
+.facultes .faculte .box-content{
+    padding: 20px;
+    color: #0e1532;
+}
+.facultes .faculte span{
+    line-height:2;
+
+}
+.facultes .faculte .detail-faculte{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.facultes a{
+
+    float: right;
+}
+
+
+.facultes a i{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+
 
 /******Galerie****/
 .section-galerie .galerie img{
@@ -328,51 +374,45 @@ background: #fdfdfdab;
 .name-partenaire span{font-weight: 600;}
 
 
-/*****Contact_us*****/
-.contact_us{
-    min-height: 100vh;
+/******Testimonial*******/
+.testimonial .box-carousel{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
-.contact_us .contact-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.testimonial .carousel-indicators{
+    margin-top: 50px
 }
-.contact_us .icon{
-    height: 100px;
-    width: 100px;
+.testimonial .carousel-indicators button{
     background: #0e1532;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 20px;
+    border-radius: 50%;
+    margin: 20px;
+    border: none;
+    height: 20px;
+    width: 20px;
 }
-.contact_us .icon span i{
-    font-size: 20px;
-    color: #dfcc03;
-    
+.testimonial .carousel-inner{
+    margin-bottom: 100px;
 }
-.contact_us .detail p{
+
+.testimonial .carousel-item p i{
+    font-size: 50px;
+    color: #6a6a6a2d;
+}
+.testimonial .name{
     font-size: 18px;
     font-weight: 600;
 }
 
 
 
-/*****facultes****/
-.nav-pills{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.facultes .nav-item button{
-    height: 80px;
-    width: 100%;
-    background: url('assets/img/happy-student-with-graduation-hat-diploma-grey_231208-12979.webp');
-}
 
+/********Contact us******/
+.contact_us{
+    min-height: 100vh;
+}
 
 /***********responsive*******/
 
