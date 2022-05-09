@@ -6,6 +6,11 @@
 
 
 /*******Universal********/
+dl, ol, ul {
+
+    list-style: none;
+}
+
 .title{
     text-align: center;
     font-size: 42px;
@@ -405,6 +410,9 @@ background: #fdfdfdab;
     font-size: 18px;
     font-weight: 600;
 }
+.testimonial .statut{
+    color: gray;
+}
 
 
 
@@ -412,7 +420,44 @@ background: #fdfdfdab;
 /********Contact us******/
 .contact_us{
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.contact_us .icons{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #0e1532;
+    margin-right: 20px;
+}
+.contact_us i{
+    font-size: 20px;
+    
+    color: #fff;
+}
+
+form{
+    float: right;
+}
+
+
+/*********Footer*******/
+.footer{
+    background: gray;
+}
+.footer .menu ul li{margin: 20px; font-size: 18px;}
+
+.footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+
+
+
 
 /***********responsive*******/
 
