@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    
+}
 
 /*******Universal********/
 dl, ol, ul {
@@ -17,6 +19,7 @@ dl, ol, ul {
     color: #0e1532;
     font-weight: 600;
     margin-bottom: 50px;
+    text-decoration: underline 3px solid #0e1532;
 }
 
 header{
@@ -446,6 +449,9 @@ form{
 .footer{
     background: gray;
 }
+.footer .menu{
+    margin: 1px auto;
+}
 .footer .menu ul li{margin: 20px; font-size: 18px;}
 
 .footer a{
@@ -455,7 +461,11 @@ form{
 }
 
 
-
+.how_we{
+    background: #dfcc03;
+    min-height: 50vh;
+    margin: 30px auto;
+}
 
 
 
@@ -505,6 +515,12 @@ form{
 
     .about .statistique{
        
+        float: none;
+    }
+
+    /******Contact us******/
+    form{
+        margin-top: 30px;
         float: none;
     }
 }
