@@ -3,13 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    
-}
 
 /*******Universal********/
 dl, ol, ul {
-
     list-style: none;
 }
 
@@ -21,14 +17,12 @@ dl, ol, ul {
     margin-bottom: 50px;
     text-decoration: underline 3px solid #0e1532;
 }
-
+/******Header******/
 header{
     width: 100%;
     position: fixed;
     z-index: 99;
-    
 }
-
 
 .navbar-brand{color: #fff !important;font-weight: 700;font-size: 30px;padding: 5px;}
 
@@ -64,29 +58,26 @@ header{
 .nav-item .active > a,
 .nav-item li:hover > a{
     color: #dfcc03 !important;
-  }
+}
 .dropdown-menu {background-color: #6a6a6a !important;margin-bottom: 15px;width: 200px; text-align: center;}
 
 
 .inscription-btn{
     height: 40px;
-width: 150px;
-border: 2px solid #dfcc03;
-background: #fdfdfdab;
+    width: 150px;
+    border: 2px solid #dfcc03;
+    background: #fdfdfdab;
 }
 .inscription-btn a{text-decoration: none;color: #0e1532;font-weight: bold;}
 .inscription-btn a:hover{color: #dfcc03;}
 
-
+/*****Banner******/
 .banner{
     height: 100vh
 }
 .banner .carousel-inner{
     position: absolute;
 }
-
-
-/*********************Carousel**************/
 .carousel .item{height: 100vh;width: 100%;}
 
 .carousel .item img{width: 100%;height: 100%;object-fit: cover;animation-name: fadeInUp;}
@@ -185,40 +176,8 @@ background: #fdfdfdab;
     display: grid;
     place-items: center;
     width: 100%;
-
-    
 }
 
-.about .statistique{
-    display: grid;
-    place-items: center;
-    margin:10px;
-    width: 80%;
-    height: 120px;
-    display: grid;
-    place-items: center;
-    box-shadow: 5px 0px 20px 0px #b9b9b9;
-    border-radius: 5px;
-    float: right;
-}
-.about .statistique:hover{
-    transition: 0.3s ease-in-out;
-    transform: translateX(16px);
-    background:url('assets/img/ss.svg');
-}
-.about .statistique:hover p{color: #fff;}
-
-
-.about .statistique .span{
-    font-size: 25px;
-    color: #dfcc03;
-    font-weight: 700;
-}
-.about .statistique p{
-    font-size: 18px;
-    font-weight: 600;
-    font-weight: 300;
-}
 .about .about-text p{
     font-size: 18px;
     letter-spacing: 2px;
@@ -227,11 +186,6 @@ background: #fdfdfdab;
 .about .about-text p span{
     font-weight: bolder;
     font-size: 19px;
-}
-.about .trait{
-    height: 100%;
-    background:#0e1532;
-    width: 2px;
 }
 
 
@@ -259,7 +213,6 @@ background: #fdfdfdab;
     padding: 15px;
     box-shadow: 5px 0px 20px 0px #b9b9b9;
 }
-
 .ours_services  .box:hover{
     box-shadow: 5px 0px 20px 0px #b9b9b9;
 }
@@ -290,7 +243,6 @@ background: #fdfdfdab;
     align-items: center;
     min-height: 100vh;
 }
-
 .facultes .faculte{
     display: flex;
     justify-content: center;
@@ -302,58 +254,30 @@ background: #fdfdfdab;
     background-image: url("https://cabinet3c.net/2/wp-content/uploads/2019/12/campus_slider_object.png");
     transition: 0.3s all ease-in-out;
 }
-
-
 .facultes .faculte .box-content{
     padding: 20px;
     color: #0e1532;
 }
 .facultes .faculte span{
     line-height:2;
-
 }
 .facultes .faculte .detail-faculte{
     font-weight: 600;
     font-size: 22px;
 }
-
-
 .facultes a{
-
     float: right;
 }
-
-
 .facultes a i{
     font-size: 25px;
     margin-top: 10px;
 }
 
-
-
-
-
-
-/******Galerie****/
-.section-galerie .galerie img{
-    width: 50%;
-    height: 50%;
-}
-.section-galerie .owl-dots{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin: 20px;
-}
-.owl-dots .owl-dot.active span{background: #dfcc03 !important;}
-
-.section-galerie .owl-dots button{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: none;
-    background: #0e1532;
-    margin: 10px;
+/********How We*******/
+.how_we{
+    background: #dfcc03;
+    min-height: 50vh;
+    margin: 30px auto;
 }
 
 
@@ -378,9 +302,29 @@ background: #fdfdfdab;
     width: 90px;
     border-radius: 50%;
 }
-
 .name-partenaire span{font-weight: 600;}
 
+
+/******Galerie****/
+.section-galerie .galerie img{
+    width: 50%;
+    height: 50%;
+}
+.section-galerie .owl-dots{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 20px;
+}
+.owl-dots .owl-dot.active span{background: #dfcc03 !important;}
+.section-galerie .owl-dots button{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: none;
+    background: #0e1532;
+    margin: 10px;
+}
 
 /******Testimonial*******/
 .testimonial .box-carousel{
@@ -404,7 +348,6 @@ background: #fdfdfdab;
 .testimonial .carousel-inner{
     margin-bottom: 100px;
 }
-
 .testimonial .carousel-item p i{
     font-size: 50px;
     color: #6a6a6a2d;
@@ -416,8 +359,6 @@ background: #fdfdfdab;
 .testimonial .statut{
     color: gray;
 }
-
-
 
 
 /********Contact us******/
@@ -436,14 +377,15 @@ background: #fdfdfdab;
 }
 .contact_us i{
     font-size: 20px;
-    
     color: #fff;
 }
-
 form{
     float: right;
 }
-
+form span{
+    color: red;
+    font-size: 18px;
+}
 
 /*********Footer*******/
 .footer{
@@ -461,12 +403,6 @@ form{
 }
 
 
-.how_we{
-    background: #dfcc03;
-    min-height: 50vh;
-    margin: 30px auto;
-}
-
 
 
 /***********responsive*******/
@@ -474,7 +410,6 @@ form{
 @media (max-width:991px) {
     
     /*******Header******/
-    
     .navbar-collapse{
         height: 100vh;
         text-align: center;
@@ -483,9 +418,7 @@ form{
         z-index: 99;
     }
     
-    .navbar-toggler{background: #fff;}
-
-    .nav-item a::before{content: none;}
+    .navbar-toggler{background: #fff !important;}
 
     .inscription-btn{margin: 0;display: block;position: relative;}
 
@@ -494,42 +427,22 @@ form{
     .inscription-btn-desktop{display: none;}
     
     /*************carousel**************/
-    .carousel .header-content{padding:50px ;}
 
-    .carousel .header-content h2{font-size: 42px;}
+    .carousel .header-content h2{font-size: 40px; padding: 10px;}
 
     .carousel .header-content h4{color: #fff;font-weight: 300;font-size: 24px;}
-
-    .carousel .btn-carousel{
-        margin: 5px !important;
-    }
-
-
-    /*****About***/
-    .about-detail{
-        flex-direction: column-reverse;
-    }
-    .about .statistique{margin: 30px auto;width: 65%;}
-    .about-text{margin: 0 !important;}
-    .about-img img{height: 100%;}
-
-    .about .statistique{
-       
-        float: none;
-    }
 
     /******Contact us******/
     form{
         margin-top: 30px;
         float: none;
     }
-    
 }
 
 /*Tablette*/
 @media (max-width:768px) {
     /*carousel*/
-    .header-content h1{font-size: 38px;}
+    .carousel .header-content h2{font-size: 35px;}
 
     .header-content h4{font-size: 18px;}
     .owl-next{display: none;}
@@ -561,5 +474,4 @@ form{
 
     .carousel .header-content h2{font-size: 32px;line-height: 1.9;}
 
-    .carousel .header-content .line{margin: 10px;}
 }

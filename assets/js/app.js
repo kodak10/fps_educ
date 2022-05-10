@@ -10,7 +10,6 @@ $(document).ready(function () {
         autoplayTimeout:6500,
         autoplayHoverPause:true,
         
-        
       responsive:{
           0:{
               items:1
@@ -50,26 +49,19 @@ $('.galerie').owlCarousel({
 })
   
 
+window.onscroll = function () {
 
-
- 
-
-
- window.onscroll = function () {
-
-if (document.documentElement.scrollTop > 40) {
-/*au scrool*/
-document.getElementById("header").style.background = "#0e1532";
-document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
-document.getElementById("navbar").style.padding = "10px 0px";
-}
-else {
-/*sans scrool*/
-document.getElementById("header").style.background = "transparent";
-document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
-document.getElementById("header").style.padding = "10px 0px";
-
-}
-
+    if (document.documentElement.scrollTop > 40) {
+        /*au scrool*/
+        document.getElementById("header").style.background = "#0e1532";
+        document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
+        document.getElementById("navbar").style.padding = "10px 0px";
+    }
+    else {
+        /*sans scrool*/
+        document.getElementById("header").style.background = "transparent";
+        document.getElementsByClassName("navbar-toggler").style.background = "#fff !important";
+        document.getElementById("header").style.padding = "10px 0px";
+    }
 
 }
