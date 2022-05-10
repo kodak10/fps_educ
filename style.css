@@ -11,7 +11,7 @@ dl, ol, ul {
 
 .title{
     text-align: center;
-    font-size: 42px;
+    font-size: 28px;
     color: #0e1532;
     font-weight: 600;
     margin-bottom: 50px;
@@ -53,7 +53,7 @@ header{
 .navbar-nav .active > a::before{
     visibility: visible;
     width: 100%;
-  }
+}
 .nav-item a:hover,
 .nav-item .active > a,
 .nav-item li:hover > a{
@@ -186,6 +186,21 @@ header{
 .about .about-text p span{
     font-weight: bolder;
     font-size: 19px;
+}
+.about-text button{
+    background-color: #dfcc03;
+    border:1px solid #dfcc03;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.about-text button a{
+    color: #0e1532;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 21px;
+
 }
 
 
@@ -431,6 +446,13 @@ justify-content: end;
 
     .carousel .header-content h4{color: #fff;font-weight: 300;font-size: 24px;}
 
+    /********About*******/
+    .about-text button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    
+    }
     /******Contact us******/
     form{
         margin-top: 30px;

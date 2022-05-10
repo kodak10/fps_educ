@@ -20,6 +20,10 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"/>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  
+
 </head>
 <body>
     
@@ -130,7 +134,13 @@
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <h3 class="title">Qui sommes-nous ?</h3>
+                       
+
+                        <div id="typed-strings">
+                            <h3 id="about" class="title"></h3>
+                        </div>
+                          
+
                         <div class="about-text">
                             <p>
                                 <span>FPS EDUC</span>, basée en Côte D'Ivoire, spécialisée dans l'octroi des bourses d'études à destination de Canada, Chypre du Nord, France, Italie, Turquie. 
@@ -140,7 +150,7 @@
                                 Quant aux bourses allant de 60% à 100%, les universités en collaboration avec <span>FPS EDUC</span>, les octroient
                                 sur la base d'un test en anglais et en français, auquel les élèves et étudiants s'inscrivent et participent. <br>
                             </p>
-                                    <button class="p-2"><a href="">Telecharger la brochure</a></button>
+                                    <button><a href="">Telecharger la brochure</a></button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +158,9 @@
         </section>
 
         <section class="ours_services ">
-            <h3 class="title">NOS SERVICES</h3>
+            <div id="typed-strings">
+                <h3 id="services" class="title"></h3>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -249,7 +261,9 @@
         <section class="facultes">
             
             <div class="container">
-                <h2 class="title">Nos facultes</h2>
+                <div id="typed-strings">
+                    <h3 id="facultes" class="title"></h3>
+                </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="faculte">
@@ -374,8 +388,6 @@
             </div>
         </section>
 
-
-       
   
         <section  class="how_we">
             <p class="text-center">Pourquoi faire confiance à FPS EDUC ? faire un parallax</p>
@@ -393,7 +405,9 @@
         <section class="partenaires">
             
             <div class="container">
-                <h2>Nos Partenaires</h2>
+                <div id="typed-strings">
+                    <h3 id="ours_partenaires" class="title"></h3>
+                </div>
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="partenaire-box">
@@ -675,6 +689,32 @@
       delay: 40,
       time: 5500
     });
+  </script>
+  <script>
+    var typed = new Typed('#about', {
+        strings: ["Bienvenu sur la page de FPS EDUC", "Qui sommes-nous ?"],
+
+        showCursor: false,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 100,
+        startDelay: 0,
+        loop: true,
+   
+    });
+
+    var typed = new Typed('#services', {
+        strings: ["Nos Services"],
+
+        showCursor: false,
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 400,
+        startDelay: 0,
+        loop: true,
+   
+    });
+    
   </script>
 
    
