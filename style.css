@@ -17,7 +17,7 @@ dl, ol, ul {
     font-size: 28px;
     color: #0e1532;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin: 50px auto;
     text-decoration: underline 3px solid #0e1532;
 }
 /******Header******/
@@ -403,12 +403,25 @@ justify-content: end;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 70vh;
-
-    display: grid;
+    display: flex;
     justify-content: center;
+    align-items: center;
+
     color: #fff;
 }
-
+.how_we .title{
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.how_we .content-box p{
+    font-size: 25px;
+}
+.how_we .content-box i{
+    color: #dfcc03;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
 
 
 /*******Partenaire***/
@@ -433,6 +446,9 @@ justify-content: end;
 
 
 /******Galerie****/
+.section-galerie{
+    margin: 50px auto;
+}
 .section-galerie .galerie img{
     width: 50%;
     height: 50%;
@@ -519,7 +535,7 @@ justify-content: end;
     background: gray;
 }
 .footer .menu{
-    margin: 1px auto;
+    margin: 0px auto;
 }
 .footer .menu ul li{margin: 20px; font-size: 18px;}
 
@@ -527,6 +543,15 @@ justify-content: end;
     text-decoration: none;
     color: #fff;
     font-weight: 500;
+}
+.footer .socials .social{
+    background: #fff;
+    height: 40px;
+width: 40px;
+border-radius: 50%;
+}
+.social a i{
+    color: #0e1532;
 }
 
 
@@ -566,11 +591,22 @@ justify-content: end;
        align-items: center;
     
     }
-    /******Contact us******/
-    form{
-        margin-top: 30px;
-        float: none;
+    /******Partenaires*****/
+    .partenaires .partenaire-box span{
+        text-align: center;
     }
+    /******Contact us******/
+    .contact_us form{
+        margin:30px auto;
+      }
+
+      /*****Footer******/
+      .footer .menu ul{
+          flex-direction: column;
+          text-align: start;
+      }
+      
+    
 }
 
 /*Tablette*/

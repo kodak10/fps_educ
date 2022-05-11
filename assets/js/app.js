@@ -25,7 +25,6 @@ $(document).ready(function () {
   
 });
 
-
   
 $('.galerie').owlCarousel({
     loop:true,
