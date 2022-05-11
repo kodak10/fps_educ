@@ -1,10 +1,13 @@
-*{
+:root{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /*******Universal********/
+a{
+    text-decoration: none;
+}
 dl, ol, ul {
     list-style: none;
 }
@@ -257,28 +260,30 @@ header{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image:
+    linear-gradient(   #0e1532e3, #0e1532e3),
+    url('assets/img/bau.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+.facultes .title{color: #fff;}
 .facultes .faculte{
-    display: flex;
-    justify-content: center;
     background-color: #f2f2f2;
     margin: 20px auto;
 }
 .facultes .faculte:hover{
-    background-color: #dfcc03;
-    background-image: url("https://cabinet3c.net/2/wp-content/uploads/2019/12/campus_slider_object.png");
+    box-shadow: 5px 0px 20px 0px #b9b9b9;
     transition: 0.3s all ease-in-out;
 }
-.facultes .faculte .box-content{
-    padding: 20px;
-    color: #0e1532;
+.facultes .faculte h3{
+    line-height:1.8;
 }
-.facultes .faculte span{
-    line-height:2;
+.faculte:hover h3{
+    color: #fff;
 }
 .facultes .faculte .detail-faculte{
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 24px;
 }
 .facultes a{
     display: flex;
@@ -286,13 +291,116 @@ justify-content: end;
 }
 .facultes a i{
     font-size: 25px;
-    margin-top: 10px;
+    padding: 15px;
+
+}
+
+/***Faculte Hover***/
+.communication:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/communication.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.architecture:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/Architecture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.art_science:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/art_science.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.droit:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/droit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.ingenierie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/ingenierie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.economie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/e.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.sante:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/sante.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.medecine:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/medecine.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.pharmacie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/pharmacie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.infirmerie:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/infirmerie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.veterinaire:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/veterinaire.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+}
+.tourisme:hover{
+    background-image:
+    linear-gradient(   #dfcd037d, #dfcd037d),
+    url('assets/img/facultes/tourisme.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
 }
 
 /********How We*******/
 .how_we{
-    background: #dfcc03;
-    min-height: 50vh;
+    background-image:
+    linear-gradient(   #0e1532b5, #0e1532b5),
+    url('assets/img/how_we_2.jpg');
+    height: 100%;
+    background-size: cover;
+
     margin: 30px auto;
 }
 
