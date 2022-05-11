@@ -398,10 +398,15 @@ justify-content: end;
     background-image:
     linear-gradient(   #0e1532b5, #0e1532b5),
     url('assets/img/how_we_2.jpg');
-    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    min-height: 70vh;
 
-    margin: 30px auto;
+    display: grid;
+    justify-content: center;
+    color: #fff;
 }
 
 
