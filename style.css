@@ -110,13 +110,43 @@ header{
     clip-path: polygon(0 0, 60% 0, 36% 100%, 0% 100%);
 }
 .carousel .btn-carousel{
-    height: 40px;
-    width: 150px;
-    background: #0e1532;
-    border: 1px solid #0e1532;
-    border-radius: 5px;
+    width:200px ;
+    margin: 20px;
+    padding: 10px;
 }
-.carousel .btn-carousel a{color: #fff;text-decoration: none;}
+.carousel a:hover{
+    color: #fff;
+}
+.btn-about{
+    background-color: #0e1532;
+    border: 3px solid #0e1532;
+}
+.btn-about a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn-about:hover{
+    background-color: rgba(255, 255, 255, 0.229);
+    border: 3px solid #0e1532;
+}
+.btn-inscription{
+    background-color: #fff;
+    border: 3px solid #fff;
+}
+.btn-inscription a{
+    color: #0e1532;
+    font-weight: 400;
+    text-decoration: none;
+}
+.btn-inscription:hover{
+    background-color: rgba(255, 255, 255, 0.229);
+    border: 3px solid #dfcc03;
+}
+.btn-inscription:hover a{
+    color: #fff;
+}
 
 .owl-carousel .active .line{
     animation-iteration-count: 1;
@@ -172,10 +202,19 @@ header{
     color: #fff;
     font-weight:bolder;
 }
+/******Infos*****/
+.infos{
+    background-color: #0e1532;
+    display: flex;
+    color: #fff;
+}
+.infos div:first-child{
+    background-color: #dfcc03;
+}
 
 /*********About*******/
 .about{
-    min-height:100vh;
+    min-height:80vh;
     display: grid;
     place-items: center;
     width: 100%;
@@ -192,11 +231,16 @@ header{
 }
 .about-text button{
     background-color: #dfcc03;
-    border:1px solid #dfcc03;
+    border:2px solid #dfcc03;
     text-decoration: none;
     padding: 10px;
 
 }
+.about-text button:hover{
+    background-color: #0e1532;
+    border: 2px solid #0e1532;
+}
+.about-text button:hover a{color: #fff;}
 .about-text button a{
     color: #0e1532;
     font-weight: 400;
@@ -339,7 +383,7 @@ justify-content: end;
 .economie:hover{
     background-image:
     linear-gradient(   #dfcd037d, #dfcd037d),
-    url('assets/img/facultes/e.jpg');
+    url('assets/img/facultes/economie.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-background-size: cover; /* pour anciens Chrome et Safari */
@@ -430,9 +474,10 @@ justify-content: end;
     background: #f2f2f2;
     margin: 20px auto;
 }
-/* .partenaires .partenaire-box:hover{
-    box-shadow: 5px 0px 20px 0px #b9b9b9;
-} */
+.partenaires .partenaire-box:hover{
+    box-shadow: 5px 0px 20px 0px #0e1532;
+    transition: 0.2s all ease-in-out;
+}
 .partenaire-box .content-box{
     padding: 10px;
 }
@@ -468,13 +513,20 @@ justify-content: end;
     background: #0e1532;
     margin: 10px;
 }
+.section-galerie p{
+    font-size: 20px;
+}
+.section-galerie p a{color: #dfcc03;text-decoration: none;}
 
 /******Testimonial*******/
 .testimonial .box-carousel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+
+    display: grid;
+    place-items: center;
+}
+.testimonial video{
+    height: 400px;
+    width: 100%;
 }
 
 .testimonial .carousel-indicators{
@@ -506,7 +558,7 @@ justify-content: end;
 
 /********Contact us******/
 .contact_us{
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -614,8 +666,9 @@ border-radius: 50%;
     /*carousel*/
     .carousel .header-content h2{font-size: 35px;}
 
+    .owl-nav{display: none;}
     .header-content h4{font-size: 18px;}
-    .owl-next{display: none;}
+
 }
 
 /*mobile*/
