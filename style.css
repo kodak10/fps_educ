@@ -607,9 +607,22 @@ border-radius: 50%;
 
 
 /********Inscription********/
-.inscription{
+.bg_inscription{
+    background: url('assets/img/bg_inscription.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;
+    
 
 }
+.bg_inscription h3{
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .inscription .input{
     position: relative;
     margin-bottom: 50px
