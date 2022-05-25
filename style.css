@@ -670,6 +670,15 @@ border-radius: 50%;
 }
 
 
+/*******Facultes*******/
+.facultes{
+    background: url('assets/img/bg_filiere.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 70vh;    
+}
+
 
 /***********responsive*******/
 
