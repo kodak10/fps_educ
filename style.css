@@ -671,7 +671,7 @@ border-radius: 50%;
 
 
 /*******Facultes*******/
-.facultes{
+.facultees{
     background: url('assets/img/bg_filiere.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -679,6 +679,12 @@ border-radius: 50%;
     min-height: 70vh;    
 }
 
+
+/*********Galerie********/
+.galerie a img{
+    width: 100%;
+    height: 300px;
+}
 
 /***********responsive*******/
 
