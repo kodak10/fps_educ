@@ -207,11 +207,18 @@ header{
     background-color: #0e1532;
     display: flex;
     color: #fff;
+    width: 60% !important;
+    margin: auto;
 }
 .infos div:first-child{
-    background-color: #dfcc03;
+    background-color: red;
+    width: 150px;
 }
-
+.infos div:first-child p{text-align: center;margin-top: 10px;}
+.infos div:last-child{
+    width: 100%;
+}
+marquee p{margin-top: 10px;}
 /*********About*******/
 .about{
     min-height:80vh;
@@ -685,6 +692,28 @@ border-radius: 50%;
     width: 100%;
     height: 300px;
 }
+
+/*********Destination********/
+.destination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.destination img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.destination h5{
+    font-weight: bold;
+}
+
+
+
+
 
 /***********responsive*******/
 

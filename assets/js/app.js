@@ -54,7 +54,7 @@ window.onscroll = function () {
         /*au scrool*/
         document.getElementById("header").style.background = "#0e1532";
 
-        document.getElementById("navbar").style.padding = "10px 0px";
+        document.getElementById("navbar").style.padding = "2px 0px";
     }
     else {
         /*sans scrool*/
