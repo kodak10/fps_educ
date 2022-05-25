@@ -218,6 +218,7 @@ header{
     display: grid;
     place-items: center;
     width: 100%;
+    background: url('curve.svg');
 }
 
 .about .about-text p{
@@ -520,7 +521,6 @@ justify-content: end;
 
 /******Testimonial*******/
 .testimonial .box-carousel{
-
     display: grid;
     place-items: center;
 }
@@ -528,9 +528,8 @@ justify-content: end;
     height: 400px;
     width: 100%;
 }
-
 .testimonial .carousel-indicators{
-    margin-top: 50px
+    margin-top: 50px;
 }
 .testimonial .carousel-indicators button{
     background: #0e1532;
@@ -606,6 +605,56 @@ border-radius: 50%;
     color: #0e1532;
 }
 
+
+/********Inscription********/
+.inscription{
+
+}
+.inscription .input{
+    position: relative;
+    margin-bottom: 50px
+}
+.inscription .input input{
+    border: none;
+    border-bottom: 2px solid #0e1532;
+    outline: none !important;
+    box-shadow:none;
+    width: 100%;
+}
+.inscription .input select{
+    border: none;
+    border-bottom: 2px solid #0e1532;
+    outline: none !important;
+    box-shadow:none;
+    width: 100%;
+}
+.inscription .input label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    color: #0e1532;
+    transition: 0.3s all ease-in-out;
+    text-transform: uppercase;
+    color: rgb(158, 158, 158)
+  
+}
+.inscription .input input:focus ~ label{
+  transform: translateY(-15px);
+  color: #dfcc03;
+}
+.inscription .input select:focus ~ select{
+    transform: translateY(-15px);
+    color: #dfcc03;
+  }
+.inscription h4{
+    margin: 0 0 10px 0;
+    line-height: 60px;
+    color: #777;
+    border-bottom: solid 1px #777;
+    margin-bottom: 35px;
+    font-size: 2.28rem;
+}
 
 
 
