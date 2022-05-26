@@ -484,7 +484,7 @@ justify-content: end;
 }
 .partenaires .partenaire-box:hover{
     box-shadow: 5px 0px 20px 0px #0e1532;
-    transition: 0.2s all ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 .partenaire-box .content-box{
     padding: 10px;
@@ -779,6 +779,12 @@ border-radius: 50%;
 
 /*mobile*/
 @media (max-width:576px) {
+    /***Nav***/
+    header{
+        position: relative;
+        background: #0e1532 !important;
+        padding: 5px 0px !important;
+    }
     /*carousel*/
     .header-content h1{font-size: 28px;}
 
