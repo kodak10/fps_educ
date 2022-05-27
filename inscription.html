@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,11 +25,27 @@
 
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+
+  <script>
+    const top=document.querySelector(".top");
+  window.addEventListener("scroll" , () =>{
+      if(window.pageXOffset > 100){
+          top.classList.add("active");
+      }
+      else{
+          top.classList.remove("active");
+      }
+  });
+  </script>
+
 </head>
 <body>
     
 
     <div class="wrapper">
+
+        <!--Vers le haut-->
+ <a href="#" class="to-top"><i class="fas fa-arrow-up"></i></a>
 
        <!--Menu-->
        <header class="header sticky-top" id="header" style="background-color: #0e1532;">
@@ -77,9 +93,11 @@
 
     </header>
 
-    <section class="bg_inscription d-flex justify-content-center align-items-center">
-        <h3>Inscription</h3>
-    </section>
+
+        <div id="particles-js" style='background-color: rgb(182, 25, 36);height: 70vh;'><h3>INSCRIPTION</h3></div>
+    
+
+    
        
       <section class="inscription mt-5">
         <div class="container">
@@ -135,9 +153,8 @@
           </div>
 
 
-          <h4>INFORMATIONS PARENTALES</h4>
-          
-             
+        <h4>INFORMATIONS PARENTALES</h4>
+
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="input">
@@ -221,7 +238,7 @@
                 <p>Les bulletins de la classe de 2nd,1ère et la terminale</p>
                 <p>L'extrait de naissance datant de 3 mois</p>
                 <p>Le passeport</p>
-                <p>La pièce d'identité de l'étidiant</p>
+                <p>La pièce d'identité de l'étudiant</p>
                 <p>La pièce d'identité du parent</p>
                 <p>Le rélévé bancaire du parent</p>
                 <p>Une prise en charge</p>
@@ -234,7 +251,7 @@
                 <p>le diplôme de la licence</p>
                 <p>L'extrait de naissance datant de 3 mois</p>
                 <p>Le passeport</p>
-                <p>La pièce d'identité de l'étidiant</p>
+                <p>La pièce d'identité de l'étudiant</p>
                 <p>La pièce d'identité du parent</p>
                 <p>Le rélévé bancaire du parent</p>
                 <p>Une prise en charge</p>
@@ -274,12 +291,15 @@
 
     </section>
 
-
-
     </div>
 
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.js" ></script>
+    <script src="assets/js/particles.js" ></script>
+    <script src="assets/js/app_particles.js" ></script>
+    <script src="assets/js/particles.min.js" ></script>
+    
     
 </body>
 </html>

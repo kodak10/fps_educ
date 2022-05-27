@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*******Universal********/
 a{
     text-decoration: none;
@@ -20,6 +22,33 @@ dl, ol, ul {
     margin: 50px auto;
     text-decoration: underline 3px solid #0e1532;
 }
+/*vers le haut*/
+.to-top {
+    background: #0e1532;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:40px;
+    height:40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:18px;
+    color:#1f1f1f;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 98;
+  }
+  
+  
+  .to-top.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+  }
 /******Header******/
 header{
     width: 100%;
@@ -307,6 +336,9 @@ marquee p{margin-top: 10px;}
 
 
 /******Facultes*******/
+.faculte a{
+    text-decoration: none;
+}
 .facultes{
     display: flex;
     justify-content: center;
@@ -615,13 +647,20 @@ border-radius: 50%;
 
 /********Inscription********/
 .bg_inscription{
-    background: url('assets/img/bg_inscription.jpg');
+/*     background: url('assets/img/bg_inscription.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    min-height: 70vh;
+    background-attachment: fixed; */
+    min-height: 60vh;
     
 
+}
+#particles-js{
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .bg_inscription h3{
     font-size: 42px;
@@ -670,12 +709,30 @@ border-radius: 50%;
 .inscription h4{
     margin: 0 0 10px 0;
     line-height: 60px;
-    color: #777;
+    color: #0e1532;
+    font-weight: 800;
     border-bottom: solid 1px #777;
     margin-bottom: 35px;
-    font-size: 2.28rem;
-}
 
+}
+.bg-success h4{
+    font-size: 36px;
+}
+.bg-success h5{
+    text-align: center;
+    color: #ffff;
+    font-weight: bold;
+    font-size:24px;
+}
+.bg-success p{
+    margin-top: 15px;
+    color: #fff;
+    font-size: 16px;
+}
+.bg-success span{
+    color: #dfcc03;
+    font-weight: bold;
+}
 
 /*******Facultes*******/
 .facultees{
@@ -688,9 +745,9 @@ border-radius: 50%;
 
 
 /*********Galerie********/
-.galerie a img{
+.galerie .item img{
     width: 100%;
-    height: 300px;
+    height: 250px;
 }
 
 /*********Destination********/
