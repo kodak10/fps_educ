@@ -769,7 +769,7 @@ border-radius: 50%;
 }
 
 /*******Actualite***/
-.actualite:first-child .une{
+.actualite img:first-child{
     height: 500px;
 }
 .actualite:first-child img{
