@@ -768,9 +768,35 @@ border-radius: 50%;
     font-weight: bold;
 }
 
-
-
-
+/*******Actualite***/
+.actualite:first-child .une{
+    height: 500px;
+}
+.actualite:first-child img{
+    height: 200px;
+}
+.actualite a img{
+    height: 250px;
+    
+}
+.actualite a{
+    text-decoration: none;
+}
+.actualite .date{
+    background: #dfcc03;
+    height: 45px;
+    color: #0e1532;
+}
+.actualite .date span{
+    padding: 15px 20px;
+}
+/*****Pub******/
+.pub{
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    font-size: 64px;
+}
 
 /***********responsive*******/
 
