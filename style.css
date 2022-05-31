@@ -736,14 +736,25 @@ border-radius: 50%;
 
 /*******Facultes*******/
 .facultees{
-    background: url('assets/img/bg_filiere.jpg');
+    background: url('assets/img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    min-height: 70vh;    
+    min-height: 80vh; 
+}
+.facultees  h3{
+    font-size: 28px;
+    color: #ffff;
+    font-weight: bold;
 }
 
-
+.facultees button{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    background-color: #0e1532;
+    color: #fff;
+    border: none;
+}
 /*********Galerie********/
 .galerie .item img{
     width: 100%;
@@ -769,16 +780,14 @@ border-radius: 50%;
 }
 
 /*******Actualite***/
-.actualite img:first-child{
-    height: 500px;
-}
-.actualite:first-child img{
-    height: 200px;
+.une{
+    height: 500px !important;
 }
 .actualite a img{
     height: 250px;
     
 }
+
 .actualite a{
     text-decoration: none;
 }
@@ -798,6 +807,34 @@ border-radius: 50%;
     font-size: 64px;
 }
 
+/********Offres******/
+/*offre*/
+.bg_offres{
+    background-image: url('assets/img/bau.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #dfcd036c;
+    min-height: 70vh;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+}
+.offre{
+    background-color: #0e1532;
+}
+.offre:hover{
+    background-color: #dfcc03;
+    transition: 0.3s all ease-in-out;
+}
+.offre .btn{
+    background-color: #dfcc03;
+    width: 170px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
 /***********responsive*******/
 
 @media (max-width:991px) {
